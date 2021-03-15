@@ -6,3 +6,4 @@
 
 
 **Simon:** MixedDrink class,  A simple mixed drink consisting of two liquids e.g. a *Gin Tonic*. 
+**Dominik** SoftDrink class, consisting of Soft drinks 
