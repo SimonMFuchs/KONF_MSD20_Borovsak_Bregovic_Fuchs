@@ -58,7 +58,7 @@ public class MixedDrink extends Drink{
     }
 
     public String toString(){
-        String alcoholPercent = String.format("%.2f", getAlcoholPercent());
+        String alcoholPercent = String.format("%.1f", getAlcoholPercent());
         return "Mixed Drink called " + name + " with " + alcoholPercent + " percent alcohol by volume";
     }
 }
