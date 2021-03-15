@@ -8,13 +8,13 @@ public class SoftDrink extends Drink{
     double volume;
 
 
-
+    // nameing my drink and how much i want of it
     SoftDrink(String name1, double volume){
         this.nameDrink = name1;
         this.volume = volume;
     }
 
-    @Override
+    // overide the superclass method get volume
     public double getVolume(double volume) {
         this.volume = volume;
     }
