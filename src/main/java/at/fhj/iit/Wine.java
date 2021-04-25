@@ -29,6 +29,11 @@ public class Wine extends Drink {
         }
         return false;
     }
+
+    @Override
+    public String getName() {
+        return null;
+    }
 }
 
 

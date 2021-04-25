@@ -5,10 +5,14 @@ package at.fhj.iit;
  */
 public abstract class Drink {
 
+
     /**
      * name of the drink, so it's easier to identify drink
      */
     protected String name;
+    protected double volume;
+    protected boolean alcoholic;
+    protected double alcoholPercent;
 
     /**
      * Creates a Drink object with given name, e.g. juice or orange juice
@@ -19,6 +23,10 @@ public abstract class Drink {
 
     public Drink(String name) {
         this.name = name;
+    }
+
+    public Drink() {
+
     }
 
     /**
@@ -41,4 +49,6 @@ public abstract class Drink {
      * @return true when alcoholic liquids are present, otherwise false
      */
     public abstract boolean isAlcoholic();
+
+    public abstract String getName();
 }
