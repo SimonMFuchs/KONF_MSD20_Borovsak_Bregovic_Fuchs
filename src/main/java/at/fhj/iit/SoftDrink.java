@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class SoftDrink extends Drink{
 
     /**
-     *
      * @param name1 , softdrink name
      * @param volume , volume in liters
      *               the attributes that are necessary for a softdrink in order to exist

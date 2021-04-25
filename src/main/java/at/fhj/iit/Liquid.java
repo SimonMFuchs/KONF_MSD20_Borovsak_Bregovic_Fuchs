@@ -4,6 +4,10 @@ package at.fhj.iit;
  * represents a liquid which can be used in drinks
  */
 public class Liquid {
+
+    public Liquid(){
+        
+    }
     /**
      * name of liquid
      */
