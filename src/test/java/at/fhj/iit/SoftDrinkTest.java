@@ -22,8 +22,6 @@ class SoftDrinkTest extends Drink {
     @ParameterizedTest
     @CsvSource({
             "cola, 0.5",
-            "fanta, 0.01",
-            "spezi, 1.0",
     })
     @DisplayName("Test getVolume")
     void testGetVolume(String name, double vol) {
