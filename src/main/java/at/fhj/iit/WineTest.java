@@ -38,19 +38,13 @@ public class WineTest {
         }
 
         /**
-         * testing the method isAlcoholic
+         * testing the method getName
          */
 
         @Test
-        void isAlcoholic() {
-            MixedDrink md = new MixedDrink("Wine",1,1 );
+        void getName() {
+            Liquid w = new Liquid("wine2", 2, 12);
+            assertEquals("wine", w.getName());
         }
 
-        /**
-         * testing the method printOut
-         */
-
-        @Test
-        void printOut() {
-        }
     }
