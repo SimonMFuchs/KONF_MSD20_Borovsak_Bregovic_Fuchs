@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        SoftDrink drink1 = new SoftDrink(scanner.nextLine(), scanner.nextDouble());
+        SoftDrink drink1 = new SoftDrink("cola", 0.5);
 
         Liquid l = new Liquid("Wein", 0.125, 13);
         System.out.println(l.getName());
