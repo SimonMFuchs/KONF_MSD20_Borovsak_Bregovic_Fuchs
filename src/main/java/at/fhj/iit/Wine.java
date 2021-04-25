@@ -68,13 +68,10 @@ public class Wine extends Drink {
         return false;
     }
 
-<<<<<<< HEAD
     @Override
     public String getName() {
         return null;
     }
-=======
->>>>>>> ef2b63c4666cca224632852f05e95dd32f33eeff
 }
 
 
