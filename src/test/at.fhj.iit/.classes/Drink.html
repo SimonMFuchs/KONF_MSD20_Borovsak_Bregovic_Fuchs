@@ -1,0 +1,148 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Drink</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">at.fhj.iit</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Drink (at.fhj.iit)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Drink</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 3)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package at.fhj.iit;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;/**
+<i>4</i>&nbsp; * Abstract base class for concrete drink classes
+<i>5</i>&nbsp; */
+<i>6</i>&nbsp;public abstract class Drink {
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;
+<i>9</i>&nbsp;    /**
+<i>10</i>&nbsp;     * name of the drink, so it&#39;s easier to identify drink
+<i>11</i>&nbsp;     * volume in liters
+<i>12</i>&nbsp;     * alcoholic, a drink can be alcoholic but don&#39; has to be
+<i>13</i>&nbsp;     * alcoholPercent, lets us know how strong the alcohol is
+<i>14</i>&nbsp;     */
+<i>15</i>&nbsp;    protected String name;
+<i>16</i>&nbsp;    protected double volume;
+<i>17</i>&nbsp;    protected boolean alcoholic;
+<i>18</i>&nbsp;    protected double alcoholPercent;
+<i>19</i>&nbsp;
+<i>20</i>&nbsp;    /**
+<i>21</i>&nbsp;     * Creates a Drink object with given name, e.g. juice or orange juice
+<i>22</i>&nbsp;     *
+<i>23</i>&nbsp;     * @param name name of the drink
+<i>24</i>&nbsp;     *
+<i>25</i>&nbsp;     */
+<i>26</i>&nbsp;
+<b class="nc"><i>27</i>&nbsp;    public Drink(String name) {</b>
+<b class="nc"><i>28</i>&nbsp;        this.name = name;</b>
+<i>29</i>&nbsp;    }
+<i>30</i>&nbsp;
+<i>31</i>&nbsp;    /**
+<i>32</i>&nbsp;     *Default consturctor
+<i>33</i>&nbsp;     */
+<b class="nc"><i>34</i>&nbsp;    public Drink() {</b>
+<i>35</i>&nbsp;
+<i>36</i>&nbsp;    }
+<i>37</i>&nbsp;
+<i>38</i>&nbsp;    /**
+<i>39</i>&nbsp;     * Calculates and returns volume of drink
+<i>40</i>&nbsp;     *
+<i>41</i>&nbsp;     * @return the volume of drink in liter
+<i>42</i>&nbsp;     */
+<i>43</i>&nbsp;    public abstract double getVolume();
+<i>44</i>&nbsp;
+<i>45</i>&nbsp;    /**
+<i>46</i>&nbsp;     * Calculates and returns the alcohol percentage
+<i>47</i>&nbsp;     *
+<i>48</i>&nbsp;     * @return alcohol volume percent (e.g. 50)
+<i>49</i>&nbsp;     */
+<i>50</i>&nbsp;    public abstract double getAlcoholPercent();
+<i>51</i>&nbsp;
+<i>52</i>&nbsp;    /**
+<i>53</i>&nbsp;     * Gives information if drink is alcoholic or not
+<i>54</i>&nbsp;     *
+<i>55</i>&nbsp;     * @return true when alcoholic liquids are present, otherwise false
+<i>56</i>&nbsp;     */
+<i>57</i>&nbsp;    public abstract boolean isAlcoholic();
+<i>58</i>&nbsp;
+<i>59</i>&nbsp;    /**
+<i>60</i>&nbsp;    *return the name of the drink
+<i>61</i>&nbsp;    *
+<i>62</i>&nbsp;     */
+<i>63</i>&nbsp;
+<i>64</i>&nbsp;    public abstract String getName();
+<i>65</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2021-04-25 20:45</div>
+</div>
+</body>
+</html>

@@ -17,15 +17,28 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class WineTest {
 
+        @BeforeEach
+        void setup (){
+            Liquid wein = new Liquid ("Wine", 0.1, 12);
+            Liquid watter = new Liquid ("Watter", 0.1,0);
+
+            Wine w = new Wine("Wine",wein, watter);
+        }
+
         /**
          * testing the method getVolume
          */
 
         @Test
         void testGetVolume() {
-            Liquid w = new Liquid("wine2", 2, 12);
-            assertEquals(2, w.getVolume());
+            Liquid wein = new Liquid ("Wine", 0.1, 12);
+            Liquid watter = new Liquid ("Watter", 0.1,0);
+
+            Wine w = new Wine("Wine",wein, watter);
+
+            assertEquals(0.2, w.getVolume());
         }
+
 
         /**
          * testing the method getAlcoholPercent
@@ -33,7 +46,11 @@ public class WineTest {
 
         @Test
         void getAlcoholPercent() {
-            Liquid w = new Liquid("wine2", 2, 12);
+            Liquid wein = new Liquid ("Wine", 0.1, 12);
+            Liquid watter = new Liquid ("Watter", 0.1,0);
+
+            Wine w = new Wine("Wine",wein, watter);
+
             assertEquals(12, w.getAlcoholPercent());
         }
 
@@ -43,8 +60,35 @@ public class WineTest {
 
         @Test
         void getName() {
-            Liquid w = new Liquid("wine2", 2, 12);
-            assertEquals("wine2", w.getName());
+            Liquid wein = new Liquid ("Wine", 0.1, 12);
+            Liquid watter = new Liquid ("Watter", 0.1,0);
+
+            Wine w = new Wine("Wine",wein, watter);
+
+            assertEquals("Wine", w.getName());
+        }
+
+
+
+        @Test
+        void isAlcoholic() {
+            Liquid wein = new Liquid ("Wine", 0.1, 12);
+            Liquid watter = new Liquid ("Watter", 0.1,0);
+
+            Wine w = new Wine("Wine",wein, watter);
+
+            assertTrue(w.isAlcoholic());
+        }
+
+        @Test
+        void testToString() {
+            Liquid wein = new Liquid ("Wine", 0.1, 12);
+            Liquid watter = new Liquid ("Watter", 0.1,0);
+
+            Wine w = new Wine("Wine",wein, watter);
+
+            String expected = "Mixed wine drink Wine with 12,0 percent alcohol by volume";
+            assertEquals(expected , w.toString());
         }
 
     }

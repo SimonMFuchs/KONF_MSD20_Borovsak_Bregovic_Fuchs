@@ -26,14 +26,6 @@ public class Wine extends Drink {
         this.a = a;
     }
 
-    /**
-     * represents a method for printing out new created drink Wine
-     */
-
-    public String printOut(){
-        String alcoholPercent = String.format("%.1f", getAlcoholPercent());
-        return "Wine drink is called " + name + " with " + alcoholPercent + " alcohol percent";
-    }
 
     /**
      * Method from class Drink
@@ -70,7 +62,7 @@ public class Wine extends Drink {
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override

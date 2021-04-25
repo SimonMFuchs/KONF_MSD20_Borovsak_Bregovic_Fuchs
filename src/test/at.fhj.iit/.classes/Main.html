@@ -1,0 +1,113 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Main</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">at.fhj.iit</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Main (at.fhj.iit)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Main</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 16)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package at.fhj.iit;
+<i>2</i>&nbsp;
+<b class="nc"><i>3</i>&nbsp;public class Main {</b>
+<i>4</i>&nbsp;
+<i>5</i>&nbsp;    public static void main(String[] args){
+<i>6</i>&nbsp;
+<b class="nc"><i>7</i>&nbsp;        SoftDrink drink1 = new SoftDrink(&quot;cola&quot;, 0.5);</b>
+<b class="nc"><i>8</i>&nbsp;        System.out.println(&quot;Is Cola alcoholic? &quot; + drink1.alcoholic);</b>
+<i>9</i>&nbsp;
+<b class="nc"><i>10</i>&nbsp;        Liquid l = new Liquid(&quot;Wein&quot;, 0.125, 13);</b>
+<b class="nc"><i>11</i>&nbsp;        System.out.println(l.getName());</b>
+<b class="nc"><i>12</i>&nbsp;        System.out.println(l.getVolume());</b>
+<i>13</i>&nbsp;        
+<b class="nc"><i>14</i>&nbsp;        Liquid tonic = new Liquid(&quot;Tonic&quot;, 0.150, 0);</b>
+<b class="nc"><i>15</i>&nbsp;        Liquid gin = new Liquid(&quot;Gin&quot;, 0.04, 40);</b>
+<i>16</i>&nbsp;
+<b class="nc"><i>17</i>&nbsp;        Liquid wein = new Liquid (&quot;Wine&quot;, 0.1, 12);</b>
+<b class="nc"><i>18</i>&nbsp;        Liquid watter = new Liquid (&quot;Watter&quot;, 0.1,0);</b>
+<i>19</i>&nbsp;
+<b class="nc"><i>20</i>&nbsp;        Drink d = new SimpleDrink(&quot;Rotwein&quot;,l);</b>
+<b class="nc"><i>21</i>&nbsp;        System.out.println(d);</b>
+<i>22</i>&nbsp;
+<b class="nc"><i>23</i>&nbsp;        Drink ginTonic = new MixedDrink(&quot;Gin Tonic&quot;, gin, tonic);</b>
+<b class="nc"><i>24</i>&nbsp;        System.out.println(ginTonic);</b>
+<i>25</i>&nbsp;
+<b class="nc"><i>26</i>&nbsp;        Drink spritzer = new Wine (&quot;Spritzer&quot;, wein, watter);</b>
+<b class="nc"><i>27</i>&nbsp;        System.out.println(spritzer);</b>
+<i>28</i>&nbsp;
+<i>29</i>&nbsp;    }
+<i>30</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2021-04-25 20:45</div>
+</div>
+</body>
+</html>
