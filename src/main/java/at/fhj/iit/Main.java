@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         SoftDrink drink1 = new SoftDrink("cola", 0.5);
+        System.out.println("Is Cola alcoholic? " + drink1.alcoholic);
 
         Liquid l = new Liquid("Wein", 0.125, 13);
         System.out.println(l.getName());
