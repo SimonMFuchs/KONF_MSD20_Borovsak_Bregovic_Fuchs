@@ -8,6 +8,9 @@ public abstract class Drink {
 
     /**
      * name of the drink, so it's easier to identify drink
+     * volume in liters
+     * alcoholic, a drink can be alcoholic but don' has to be
+     * alcoholPercent, lets us know how strong the alcohol is
      */
     protected String name;
     protected double volume;
@@ -25,6 +28,9 @@ public abstract class Drink {
         this.name = name;
     }
 
+    /**
+     *Default consturctor
+     */
     public Drink() {
 
     }
@@ -49,6 +55,11 @@ public abstract class Drink {
      * @return true when alcoholic liquids are present, otherwise false
      */
     public abstract boolean isAlcoholic();
+
+    /**
+    *return the name of the drink
+    *
+     */
 
     public abstract String getName();
 }
