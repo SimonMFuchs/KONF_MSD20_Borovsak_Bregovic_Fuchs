@@ -196,7 +196,6 @@
                     <reportSet>
                         <reports>
                             <report>report</report>
-                            <report>report</report>
                         </reports>
                     </reportSet>
                 </reportSets>
