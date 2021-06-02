@@ -2,15 +2,23 @@ package at.fhj.iit;
 
 import java.util.Date;
 
+
 public class Customer {
-    Date date;       // Umsatz at a specific Day
-    String name;     // identifyer by name
-    Integer sale;   // Umsatz pro Person
+    private Date date;       // Umsatz at a specific Day
+    private Integer billNR;     // identifyer by id
+    private Integer sale;   // Umsatz pro Person
+    private static  int id;
 
 
-    public Customer(Date date, String name, Integer sale){
+    /**
+     * Creating a Custumer
+     * @param date  is the date on which the drink is bought
+     * @param id    identifyer for the specific bill
+     * @param sale  cost of drink
+     */
+    public Customer(Date date, Integer id, Integer sale){
         this.date = date;
-        this.name = name;
+        this.billNR = id;
         this.sale = sale;
     }
 

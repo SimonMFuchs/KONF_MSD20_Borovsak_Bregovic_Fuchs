@@ -3,6 +3,7 @@ package at.fhj.iit;
 import java.util.List;
 
 public class CashRegister {
+    
     Drink drink;
     List<Customer> allCustomers;
     Integer sales;          //whole sales
