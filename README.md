@@ -22,6 +22,7 @@ here I had to delete the first an last spaces in order to guarantee the same ret
 -Deleted unused imports
 -Created a CashRegister branch
 -Set upstream (git push -u origin CashRegister)
+-Created an interface CashRegister
 
 
 **Simon:** 
