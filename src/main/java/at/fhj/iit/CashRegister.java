@@ -1,24 +1,21 @@
 package at.fhj.iit;
 
-import java.util.Date;
+import java.util.List;
 
 public class CashRegister {
     Drink drink;
-    Customer customer;
+    List<Customer> allCustomers;
     Integer sales;          //whole sales
 
 
     public CashRegister(Drink drink, Customer customer){
         this.drink = drink;
-        this.customer = customer;
+        this.allCustomers.add(customer);
     }
 
-    public int calcPrice(){
-
+    public void calcTotalSales(){
+        for (int i = 0; i <allCustomers.size(); i++) {
+            this.sales += allCustomers.get(i).getSales();
+        }
     }
-
-    public Drink buyDrink(Date date, Integer alcPercent){
-
-    }
-
 }

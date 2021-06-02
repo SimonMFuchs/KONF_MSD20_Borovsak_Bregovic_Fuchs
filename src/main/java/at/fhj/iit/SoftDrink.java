@@ -7,7 +7,6 @@ public class SoftDrink extends Drink{
 
     Liquid mySoftDrink;
     Integer pricePerLiter;
-    Date dateWhenBought;
     /**
      * @param name , softdrink name
      * @param volume , volume in liters
@@ -16,10 +15,10 @@ public class SoftDrink extends Drink{
      */
     public SoftDrink(Liquid myLiquid, String name, double volume ){
         this.mySoftDrink = myLiquid;
-        mySoftDrink.setName(name);
-        mySoftDrink.setVolume(volume);
-        mySoftDrink.setAlcoholPercent(0);
-        dateWhenBought = new Date();
+        this.mySoftDrink.setName(name);
+        this.mySoftDrink.setVolume(volume);
+        this.mySoftDrink.setAlcoholPercent(0);
+        this.pricePerLiter = 1;
     }
 
     /**

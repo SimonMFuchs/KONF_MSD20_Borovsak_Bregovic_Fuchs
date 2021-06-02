@@ -5,20 +5,21 @@ import java.util.Date;
 public class Customer {
     Date date;       // Umsatz at a specific Day
     String name;     // identifyer by name
-    Integer sales;   // Umsatz pro Person
+    Integer sale;   // Umsatz pro Person
 
 
-
-
-
-    public Customer(Date date, String name, Integer sales){
+    public Customer(Date date, String name, Integer sale){
         this.date = date;
         this.name = name;
-        this.sales = sales;
+        this.sale = sale;
     }
 
     public void buyDrink (Integer sale){
-        this.sales += sale;
+        this.sale += sale;
+    }
+
+    public Integer getSales() {
+        return sale;
     }
 
 
