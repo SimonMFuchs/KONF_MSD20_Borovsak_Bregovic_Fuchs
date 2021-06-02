@@ -1,12 +1,13 @@
 package at.fhj.iit;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CashRegister {
-    
+
     Drink drink;
-    List<Customer> allCustomers;
-    Integer sales;          //whole sales
+    List<Customer> allCustomers = new ArrayList<>();
+    Integer sales;          //whole sales will be calculated whe calcTotalSales is called
 
 
     public CashRegister(Drink drink, Customer customer){

@@ -18,7 +18,7 @@ public class Customer {
      */
     public Customer(Date date, Integer id, Integer sale){
         this.date = date;
-        this.billNR = id;
+        this.billNR = id++;
         this.sale = sale;
     }
 
