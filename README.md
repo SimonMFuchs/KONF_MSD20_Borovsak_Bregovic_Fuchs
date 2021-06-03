@@ -11,7 +11,7 @@
 | Fuchs Simon              |  simon.fuchs@edu.fh-joanneum.at        |
 
 
-### Excercise 3 - changes table ###
+### Excercise 3 - changes table, commit history ###
 
 | Date          |  Time         |Decription of changes         |Name of the contributor | 
 | ------------- |---------------|------------------------------|------------------------|
