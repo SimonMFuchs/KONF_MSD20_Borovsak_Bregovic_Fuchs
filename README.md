@@ -1,9 +1,23 @@
 # Software Configuration Management #
 
-## Drinks ##
+## Drinks  ##
 
-### Borovsak Katarina, Bregovic Dominik, Fuchs Simon ###
+### Group F ### 
 
+| Name of the contributor  |  e-Mail                                |
+| ------------------------ |----------------------------------------|
+| Borovsak Katarina        |  katarina.borovsak@edu.fh-joanneum.at  |
+| Bregovic Dominik         |  dominik.bregovic@edu.fh-joanneum.at   |
+| Fuchs Simon              |  simon.fuchs@edu.fh-joanneum.at        |
+
+
+### Excercise 3 - changes table ###
+
+| Date          |  Time         |Decription of changes         |Name of the contributor | 
+| ------------- |---------------|------------------------------|------------------------|
+| 03.06.2021    |  12:36        | Created branch name Sales    | Katarina               |
+| 03.06.2021    |  12:37        | Modified README file         | Katarina               |
+|               |               |                              |                        |
 
 
 **Dominik** SoftDrink class, consisting of Soft drinks 
