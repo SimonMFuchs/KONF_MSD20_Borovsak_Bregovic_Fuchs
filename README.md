@@ -17,6 +17,7 @@
 | ------------- |---------------|------------------------------|------------------------|
 | 03.06.2021    |  12:36        | Created branch name Sales    | Katarina               |
 | 03.06.2021    |  12:37        | Modified README file         | Katarina               |
+| 03.06.2021    |  13:01        | Created class Sales.java     | Katarina               |
 |               |               |                              |                        |
 
 
