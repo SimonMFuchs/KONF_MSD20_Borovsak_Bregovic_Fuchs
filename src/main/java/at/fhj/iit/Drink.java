@@ -3,7 +3,7 @@ package at.fhj.iit;
 /**
  * Abstract base class for concrete drink classes
  */
-public abstract class Drink {
+public abstract class Drink implements PurchasableDrink{
 
 
     /**
@@ -16,6 +16,7 @@ public abstract class Drink {
     protected double volume;
     protected boolean alcoholic;
     protected double alcoholPercent;
+    protected double price;
 
     /**
      * Creates a Drink object with given name, e.g. juice or orange juice
@@ -60,6 +61,11 @@ public abstract class Drink {
     *return the name of the drink
     *
      */
-
     public abstract String getName();
+
+    /**
+     *return the price of the drink
+     *
+     */
+    public abstract double getPrice();
 }

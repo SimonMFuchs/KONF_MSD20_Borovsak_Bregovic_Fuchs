@@ -23,6 +23,11 @@ public class Liquid {
     private double alcoholPercent;
 
     /**
+     * alcoholPercent of liquid (in percent eg. 42)
+     */
+    private double price;
+
+    /**
      * Creates new liquid with given name, volume and
      * alcoholPercent
      *
@@ -36,6 +41,24 @@ public class Liquid {
 
         this.volume = volume;
         this.alcoholPercent = alcoholPercent;
+    }
+
+    /**
+     * Creates new liquid with given name, volume and
+     * alcoholPercent
+     *
+     * @param name name of liquid
+     * @param volume volume of liquid
+     * @param alcoholPercent of liquid
+     * @param price price of the liquid per litre
+     */
+    public Liquid(String name, double volume, double alcoholPercent, double price) {
+        this.name = name;
+        checkVolume(volume);
+
+        this.volume = volume;
+        this.alcoholPercent = alcoholPercent;
+        this.price = price;
     }
 
     private void checkVolume(double volume) {
@@ -96,5 +119,23 @@ public class Liquid {
      */
     public void setAlcoholPercent(double alcoholPercent) {
         this.alcoholPercent = alcoholPercent;
+    }
+
+    /**
+     * Getter for price
+     *
+     * @return price in relation to volume
+     */
+    public double getPrice() {
+        return price*volume;
+    }
+
+    /**
+     * Setter for price
+     *
+     * @param price price of the liquid (per liter)
+     */
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
