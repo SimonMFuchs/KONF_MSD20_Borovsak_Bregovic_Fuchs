@@ -3,10 +3,9 @@ package at.fhj.iit;
 import java.util.Date;
 
 //have to use the parentclass liquide
-public class SoftDrink extends Drink{
+public class SoftDrink extends Drink implements PurchasableDrink{
 
     Liquid mySoftDrink;
-    Integer pricePerLiter;
     /**
      * @param name , softdrink name
      * @param volume , volume in liters
@@ -18,7 +17,7 @@ public class SoftDrink extends Drink{
         this.mySoftDrink.setName(name);
         this.mySoftDrink.setVolume(volume);
         this.mySoftDrink.setAlcoholPercent(0);
-        this.pricePerLiter = 1;
+        this.price = myLiquid.getPrice();
     }
 
     /**
@@ -26,8 +25,6 @@ public class SoftDrink extends Drink{
      */
     public SoftDrink(){
     }
-
-
 
     /**
      *
@@ -70,5 +67,18 @@ public class SoftDrink extends Drink{
     @Override
     public String getName() {
         return this.mySoftDrink.getName();
+    }
+
+    @Override
+    public double getPrice() {
+        return mySoftDrink.getPrice();
+    }
+
+    /**
+     * creates a sale with the current time and the drink information and adds it to the cash register
+     */
+    @Override
+    public void purchase(CashRegister cashRegister) {
+        cashRegister.addSale(new Sale(new Date(), cashRegister.getCurrentCashier(), this.getPrice(), this.getAlcoholPercent()));
     }
 }

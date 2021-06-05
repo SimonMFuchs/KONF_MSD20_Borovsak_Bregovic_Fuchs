@@ -1,5 +1,7 @@
 package at.fhj.iit;
 
+import java.util.Date;
+
 /**
  * Configuration management
  * Exercise 4 - Class Wine
@@ -7,7 +9,7 @@ package at.fhj.iit;
  * Last modified: 25.04.2021
  */
 
-public class Wine extends Drink {
+public class Wine extends Drink implements PurchasableDrink {
 
     /**
      * represents two different liquids from Liquid class: w, a
@@ -24,6 +26,7 @@ public class Wine extends Drink {
         super(name);
         this.w = w;
         this.a = a;
+        this.price = w.getPrice() + a.getPrice();
     }
 
 
@@ -66,10 +69,23 @@ public class Wine extends Drink {
     }
 
     @Override
+    public double getPrice() {
+        return this.price;
+    }
+
+    @Override
     public String toString(){
         String alcoholPercent = String.format("%.1f", getAlcoholPercent());
 
             return "Mixed wine drink " + name + " with " + alcoholPercent + " percent alcohol by volume";
+    }
+
+    /**
+     * creates a sale with the current time and the drink information and adds it to the cash register
+     */
+    @Override
+    public void purchase(CashRegister cashRegister) {
+        cashRegister.addSale(new Sale(new Date(), cashRegister.getCurrentCashier(), this.getPrice(), this.getAlcoholPercent()));
     }
 }
 
