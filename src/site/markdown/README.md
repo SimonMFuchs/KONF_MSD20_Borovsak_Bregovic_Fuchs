@@ -6,7 +6,7 @@
 
 
 
-**Dominik** SoftDrink class, consisting of Soft drinks 
+**Dominik:** SoftDrink class, consisting of Soft drinks 
 
 -First added some mebervariables to the superclass Drinks.
 
@@ -19,6 +19,10 @@ all methods had given the expected value exclusevly the mixSoftDrink() method.
 here I had to delete the first an last spaces in order to guarantee the same return value in comparison to the expected value.
 
 -Deleted the scanner. Was not necessary not used.
+-Deleted unused imports
+-Created a CashRegister branch
+-Set upstream (git push -u origin CashRegister)
+-Created an interface CashRegister
 
 
 **Simon:** 
