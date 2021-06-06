@@ -4,8 +4,22 @@ public class Main {
 
     public static void main(String[] args){
 
-        Cashier simon = new Cashier("Simon");
-        CashRegister cashRegister = new CashRegister(simon);
+        //TUTORIAL
+
+        Cashier tutorial = new Cashier("Tutorial");
+        CashRegister cashRegister = new CashRegister(tutorial);
+
+        Liquid tonic = new Liquid("Tonic", 0.150, 0, 2);
+        Liquid gin = new Liquid("Gin", 0.04, 40, 50);
+        Drink ginTonic = new MixedDrink("Gin Tonic", gin, tonic);
+
+        ginTonic.purchase(cashRegister);
+
+        System.out.println(cashRegister.getCurrentCashier().getName());
+
+        System.out.println(cashRegister.getRevenueByCashier(tutorial));
+
+        //TUTORIAL ENDE
 
         Liquid liquid = new Liquid("cola", 0.5, 0);
         Drink drink1 = new SoftDrink(liquid, "Fanta", 1.0);
@@ -15,8 +29,7 @@ public class Main {
         System.out.println(l.getName());
         System.out.println(l.getVolume());
         
-        Liquid tonic = new Liquid("Tonic", 0.150, 0, 2);
-        Liquid gin = new Liquid("Gin", 0.04, 40, 50);
+
 
         Liquid wein = new Liquid ("Wine", 0.1, 12);
         Liquid watter = new Liquid ("Watter", 0.1,0);
@@ -24,17 +37,10 @@ public class Main {
         Drink d = new SimpleDrink("Rotwein",l);
         System.out.println(d);
 
-        Drink ginTonic = new MixedDrink("Gin Tonic", gin, tonic);
+
         System.out.println(ginTonic);
 
         Drink spritzer = new Wine ("Spritzer", wein, watter);
         System.out.println(spritzer);
-
-        ginTonic.purchase(cashRegister);
-
-        System.out.println(cashRegister.getCurrentCashier().getName());
-
-        System.out.println(cashRegister.getRevenueByCashier(simon));
-
     }
 }

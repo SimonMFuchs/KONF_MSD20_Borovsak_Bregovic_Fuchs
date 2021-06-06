@@ -80,26 +80,26 @@ public class CashRegister {
     }
 
     /**
-     * returns the revenue for low alcoholic drinks (alcohol percentage < 16%)
+     * returns the revenue for low alcoholic drinks (alcohol percentage smaller 16%)
      * @return revenue made with all low alcoholic drinks
      */
     public double getRevenueLowAlcoholic() {
         double revenue = 0;
         for(Sale sale : salesList) {
-            if(sale.getAlcoholicPercent() <= 0.16)
+            if(sale.getAlcoholicPercent() <= 16)
                 revenue += sale.getPrice();
         }
         return revenue;
     }
 
     /**
-     * returns the revenue for high alcoholic drinks (alcohol percentage < 40%)
+     * returns the revenue for high alcoholic drinks (alcohol percentage bigger 40%)
      * @return revenue made with all high alcoholic drinks
      */
     public double getRevenueHighAlcoholic() {
         double revenue = 0;
         for(Sale sale : salesList) {
-            if(sale.getAlcoholicPercent() >= 0.16)
+            if(sale.getAlcoholicPercent() > 16)
                 revenue += sale.getPrice();
         }
         return revenue;
