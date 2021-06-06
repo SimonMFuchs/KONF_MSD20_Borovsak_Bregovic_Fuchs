@@ -6,7 +6,8 @@
  
 In the following tables is explained how the new functionalities were design and what is the output of the newly created methods
  
-Class Cashier - represents a cashier - the person that is in control of the CashRegister
+###Class Cashier
+Represents a cashier - the person that is in control of the CashRegister
 
 | Code                    | Description                   |parameters|
 | ------------------------|-------------------------------|----------|
@@ -14,16 +15,17 @@ Class Cashier - represents a cashier - the person that is in control of the Cash
 | variable String name    | name of the cashier           | /        |
 | variable String getName | getter of the current cashier | /        |
 
-Class CashRegister - represents a cash register which stores sales and cashiers and can return revenue information
+###Class CashRegister
+Represents a cash register which stores sales and cashiers and can return revenue information
 
 | Code                    | Description                                                       |parameters |
 | ------------------------|-------------------------------------------------------------------|-----------|
-| variable ArrayList      | List of the cashiers who are allowed to operate the cash register | name      | 
-| variable String name    | name of the cashier                                               | /         |
-| variable String getName | getter of the current cashier | /        |
-
-
-
+| variable ArrayList      | List of the cashiers who are allowed to operate the cash register |/          | 
+| currentCashier          | The cashier who is operating the register at current purchases    | /         |
+| salesList               | List of sales made with the cashRegister                          | /         |
+| formatter               | formatter for date                                                | /         |
+| constructor CashRegister| currentCashier is the current cashier operating the cash register | currentCashier  |
+| salesList               | List of sales made with the cashRegister                          | /         |
 
 
 
