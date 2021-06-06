@@ -16,7 +16,7 @@ This project lets you create different drinks composed of different liquids.
 For more information on the drinks you're able to create with this program please look below. 
 
 In addition you can also add drinks as a purchase to a cash register, 
-which then tracks what kind of drinks got sold, when they got sold and how much revenue you made.
+which then tracks what kind of drinks got sold, when and by whom they got sold and how much revenue you made.
 
 ### How to use this project? ###
 
