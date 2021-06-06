@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * Configuration management
- * Exercise 4 - Class Wine
+ * Exercises - Class Wine
  * Author: Katarina Borovsak
  * Last modified: 25.04.2021
  */
