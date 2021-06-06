@@ -25,8 +25,8 @@
 
 | Class name         | Date         |  Coverage                 |Name of the contributor | 
 | ------------------ |------------- |---------------------------|------------------------|
-| MixedDrinkTest     |              |                           | Simon                  |
-| SoftDrinkTest      |              |                           | Dominik                 |
+| MixedDrinkTest     | 03.06.2021     |                           | Simon                  |
+| SoftDrinkTest      | 03.06.2021      |                           | Dominik                 |
 | WineTest           | 03.06.2021   | 100% methods, 91% lines   | Katarina               |
 
 

@@ -5,9 +5,6 @@ package at.fhj.iit;
  */
 public class Liquid {
 
-    public Liquid(){
-        
-    }
     /**
      * name of liquid
      */
