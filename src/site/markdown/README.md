@@ -32,7 +32,7 @@
 
 ### Exercise 1 - Implementation of java classes ###
 
-**Dominik** SoftDrink class, consisting of Soft drinks 
+**Dominik:** SoftDrink class, consisting of Soft drinks 
 
 -First added some mebervariables to the superclass Drinks.
 

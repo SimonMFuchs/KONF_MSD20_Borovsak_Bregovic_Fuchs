@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SoftDrinkTest extends Drink {
+class SoftDrinkTest extends Drink implements PurchasableDrink{
 
 
     @ParameterizedTest
@@ -69,5 +69,14 @@ class SoftDrinkTest extends Drink {
     @Override
     public String getName() {
         return null;
+    }
+
+    @Override
+    public double getPrice() {
+        return 0;
+    }
+
+    @Override
+    public void purchase(CashRegister cashRegister) {
     }
 }

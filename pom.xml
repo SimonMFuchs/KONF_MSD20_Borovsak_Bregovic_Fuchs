@@ -202,13 +202,4 @@
             </plugin>
         </plugins>
     </reporting>
-
-    <licenses>
-        <license>
-            <name>GNU GPLv3 </name>
-            <url>https://www.gnu.org/licenses/gpl-3.0.de.html</url>
-            <distribution>repo</distribution>
-            <comments>I care about sharing improvements.</comments>
-        </license>
-    </licenses>
 </project>

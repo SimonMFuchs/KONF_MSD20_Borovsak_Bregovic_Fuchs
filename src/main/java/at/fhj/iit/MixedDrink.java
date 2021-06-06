@@ -3,7 +3,7 @@ package at.fhj.iit;
 /**
  * represents a alcoholic mixed drink
  */
-public class MixedDrink extends Drink{
+public class MixedDrink extends Drink implements PurchasableDrink{
 
     /**
      * uses two liquids and a garnish
@@ -11,8 +11,6 @@ public class MixedDrink extends Drink{
     protected Liquid l1;
     protected Liquid l2;
     protected String garnish;
-
-
 
     /**
      * Creates a MixedDrink object with given name, liquids and a garnish
@@ -27,6 +25,7 @@ public class MixedDrink extends Drink{
         this.l1 = l1;
         this.l2 = l2;
         this.garnish = garnish;
+        this.price = l1.getPrice() + l2.getPrice();
 
         java.util.Locale.setDefault(new java.util.Locale("en", "US"));
     }
@@ -41,6 +40,7 @@ public class MixedDrink extends Drink{
         super(name);
         this.l1 = l1;
         this.l2 = l2;
+        this.price = l1.getPrice() + l2.getPrice();
 
         java.util.Locale.setDefault(new java.util.Locale("en", "US"));
     }
@@ -82,6 +82,11 @@ public class MixedDrink extends Drink{
         return null;
     }
 
+    @Override
+    public double getPrice() {
+        return price;
+    }
+
     /**
      * Gives information if the drink has a garnish or not
      *
@@ -106,5 +111,13 @@ public class MixedDrink extends Drink{
             return "Mixed Drink called " + name + " with " + alcoholPercent + " percent alcohol by volume and with " + garnish + " as garnish";
         else
             return "Mixed Drink called " + name + " with " + alcoholPercent + " percent alcohol by volume";
+    }
+
+    /**
+     * creates a sale with the current time and the drink information and adds it to the cash register
+     */
+    @Override
+    public void purchase(CashRegister cashRegister) {
+        cashRegister.addSale(new Sale(cashRegister.getCurrentCashier(), this.getPrice(), this.getAlcoholPercent()));
     }
 }

@@ -66,8 +66,8 @@ public class MixedDrinkTest {
 
     @ParameterizedTest
     @CsvSource({
-            " 0.2,  0, 0.04,  40, , false",
-            " 0.15,  0.0, 0.02,  0, ,false",
+            " 0.2,  0, 0.04,  40,, false",
+            " 0.15,  0.0, 0.02,  0,,false",
             " 0.3,  0.0, 0.08,  20, cherry, true",
             " 0.1,  0.0, 0.05,  0, lemon, true",
     })
@@ -98,5 +98,15 @@ public class MixedDrinkTest {
         String actual = drink.toString();
 
         assertEquals(expected, actual);
+    }
+
+    @DisplayName("Testing constructor without garnish")
+    public void testConstructor() {
+        Liquid l1 = new Liquid("TestLiquid1", 1, 20);
+        Liquid l2 = new Liquid("TestLiquid1", 1, 0);
+        drink = new MixedDrink("TestDrink", l1, l2);
+        Drink actual = drink;
+
+        assertEquals(new MixedDrink("TestDrink", l1, l2), actual);
     }
 }

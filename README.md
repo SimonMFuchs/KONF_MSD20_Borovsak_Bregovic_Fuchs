@@ -20,6 +20,11 @@
 | 03.06.2021    |  13:01        | Created class Sales.java     | Katarina               |
 |               |               |                              |                        |
 
+## Sources for writing a README document ## 
+[Make a read me web page](https://www.makeareadme.com/)
+
+[Markdown web page](https://www.markdownguide.org/cheat-sheet)
+
 
 ### Exercise 2 - test coverage ###
 

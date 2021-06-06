@@ -1,9 +1,11 @@
 package at.fhj.iit;
 
+import java.util.Date;
+
 /**
  * represents a simple drink liquid which can be used in drinks
  */
-public class SimpleDrink extends Drink{
+public class SimpleDrink extends Drink implements PurchasableDrink{
 
     /**
      * uses only one liquid
@@ -19,6 +21,7 @@ public class SimpleDrink extends Drink{
     SimpleDrink(String name, Liquid l){
         super(name);
         this.l = l;
+        this.price = l.getPrice();
     }
 
     /**
@@ -59,7 +62,25 @@ public class SimpleDrink extends Drink{
         return null;
     }
 
+    /**
+     * Returns the price of liquid l
+     *
+     * @return price of liquid as double
+     */
+    @Override
+    public double getPrice() {
+        return price;
+    }
+
     public String toString(){
         return "Simple Drink called " + name + " with " + l.getAlcoholPercent() + " percent alcohol by volume";
+    }
+
+    /**
+     * creates a sale with the current time and the drink information and adds it to the cash register
+     */
+    @Override
+    public void purchase(CashRegister cashRegister) {
+        cashRegister.addSale(new Sale(cashRegister.getCurrentCashier(), this.getPrice(), this.getAlcoholPercent()));
     }
 }
