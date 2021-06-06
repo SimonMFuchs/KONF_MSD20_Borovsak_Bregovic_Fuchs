@@ -3,10 +3,11 @@ package at.fhj.iit;
 import java.util.Date;
 
 //have to use the parentclass liquide
-public class SoftDrink extends Drink{
+public class SoftDrink extends Drink implements BuyDrink{
 
     Liquid mySoftDrink;
     Integer pricePerLiter;
+    Integer sales;
     /**
      * @param name , softdrink name
      * @param volume , volume in liters
@@ -70,5 +71,10 @@ public class SoftDrink extends Drink{
     @Override
     public String getName() {
         return this.mySoftDrink.getName();
+    }
+
+    @Override
+    public void buyDrink(Integer cost) {
+        this.sales += cost;
     }
 }
