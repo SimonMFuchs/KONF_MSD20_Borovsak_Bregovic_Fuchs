@@ -26,6 +26,9 @@
 
 [Markdown web page](https://www.markdownguide.org/cheat-sheet)
 
+[Beginners guide to documentation](https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/)
+
+
 
 ### Exercise 2 - test coverage ###
 
