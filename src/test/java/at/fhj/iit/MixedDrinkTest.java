@@ -1,6 +1,7 @@
 package at.fhj.iit;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -10,6 +11,10 @@ import static org.junit.jupiter.api.Assertions.*;
 public class MixedDrinkTest {
 
     private MixedDrink drink;
+    private Liquid l1;
+    private Liquid l2;
+    private CashRegister cashRegister;
+    private Cashier cashier;
 
     @ParameterizedTest
     @CsvSource({
@@ -100,13 +105,32 @@ public class MixedDrinkTest {
         assertEquals(expected, actual);
     }
 
-    @DisplayName("Testing constructor without garnish")
-    public void testConstructor() {
-        Liquid l1 = new Liquid("TestLiquid1", 1, 20);
-        Liquid l2 = new Liquid("TestLiquid1", 1, 0);
-        drink = new MixedDrink("TestDrink", l1, l2);
-        Drink actual = drink;
+    @Test
+    public void testGetName(){
+        l1 = new Liquid("TestLiquid1", 0.4, 0);
+        l2 = new Liquid("TestLiquid1", 0.1, 40);
+        drink = new MixedDrink("TestDrink", l1, l2, "lemon");
+        assertEquals("TestDrink", drink.getName());
+    }
 
-        assertEquals(new MixedDrink("TestDrink", l1, l2), actual);
+    @Test
+    public void testGetPrice(){
+        l1 = new Liquid("TestLiquid1", 0.4, 0, 10);
+        l2 = new Liquid("TestLiquid1", 0.1, 40, 50);
+        drink = new MixedDrink("TestDrink", l1, l2, "lemon");
+        assertEquals(9, drink.getPrice());
+    }
+
+    @Test
+    public void testPurchase(){
+        l1 = new Liquid("TestLiquid1", 0.4, 0, 10);
+        l2 = new Liquid("TestLiquid1", 0.1, 40, 50);
+        drink = new MixedDrink("TestDrink", l1, l2, "lemon");
+
+        cashier = new Cashier("cashier");
+        cashRegister = new CashRegister(cashier);
+        Sale expected = new Sale(cashier, 9, 8);
+        drink.purchase(cashRegister);
+        assertEquals(expected.getPrice(), cashRegister.getSalesList().get(0).getPrice());
     }
 }

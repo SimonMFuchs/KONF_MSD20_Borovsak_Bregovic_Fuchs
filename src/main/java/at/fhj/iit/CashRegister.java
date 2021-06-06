@@ -14,22 +14,22 @@ public class CashRegister {
     /**
      * List of the cashiers who are allowed to operate the cash register
      */
-    private static List<Cashier> cashierList = new ArrayList<Cashier>();
+    private List<Cashier> cashierList = new ArrayList<Cashier>();
 
     /**
      * The cashier who is operating the register at current purchases
      */
-    private static Cashier currentCashier;
+    private Cashier currentCashier;
 
     /**
      * List of sales made with the cashRegister
      */
-    private static List<Sale> salesList = new ArrayList<Sale>();
+    private List<Sale> salesList = new ArrayList<Sale>();
 
     /**
      * formatter for date;
      */
-    protected static SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
+    protected SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
 
     /**
      * creating a cashRegister
@@ -113,7 +113,7 @@ public class CashRegister {
     public double getRevenueByDay(Date date) {
         double revenue = 0;
         for(Sale sale : salesList) {
-           if(sale.getDate() == formatter.format(date))
+           if(sale.getDate().equals(formatter.format(date)))
                revenue += sale.getPrice();
         }
         return revenue;
@@ -142,7 +142,7 @@ public class CashRegister {
     public double getRevenueByCashierAndDay(Cashier cashier, Date date) {
         double revenue = 0;
         for(Sale sale : salesList) {
-            if(sale.getCashier() == cashier && sale.getDate() == formatter.format(date))
+            if(sale.getCashier() == cashier && sale.getDate().equals(formatter.format(date)))
                 revenue += sale.getPrice();
         }
         return revenue;
@@ -179,7 +179,7 @@ public class CashRegister {
      *
      * @return list of sales made
      */
-    public static List<Sale> getSalesList() {
+    public List<Sale> getSalesList() {
         return salesList;
     }
 }
