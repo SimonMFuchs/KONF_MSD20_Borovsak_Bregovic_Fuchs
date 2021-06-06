@@ -10,7 +10,7 @@
 | Bregovic Dominik         |  dominik.bregovic@edu.fh-joanneum.at   |
 | Fuchs Simon              |  simon.fuchs@edu.fh-joanneum.at        |
 
-###What is this project for?
+### What is this project for? ###
 
 This project lets you create different drinks composed of different liquids. 
 For more information on the drinks you're able to create with this program please look below. 
@@ -18,12 +18,12 @@ For more information on the drinks you're able to create with this program pleas
 In addition you can also add drinks as a purchase to a cash register, 
 which then tracks what kind of drinks got sold, when they got sold and how much revenue you made.
 
-###How to use this project? 
+### How to use this project? ###
 
 Simply create different liquids and drinks and purchase them via the cash register.
 For more information please look at the tutorial site in this repository.
 
-###Installation instructions
+### Installation instructions ###
 
 Not much to say here. Just make sure you have maven installed and import the project into the IDE of your choice.
  
