@@ -18,7 +18,8 @@
 | 03.06.2021    |  12:36        | Created branch name Sales    | Katarina               |
 | 03.06.2021    |  12:37        | Modified README file         | Katarina               |
 | 03.06.2021    |  13:01        | Created class Sales.java     | Katarina               |
-|               |               |                              |                        |
+| 05.06.2021    |  20:00        | Implemented cash register functionalty| Simon         |
+| 06.06.2021    |  17:00        | Created tests for cash register classes| Simon        |
 
 ## Sources for writing a README document ## 
 [Make a read me web page](https://www.makeareadme.com/)
@@ -30,7 +31,7 @@
 
 | Class name         | Date         |  Coverage                 |Name of the contributor | 
 | ------------------ |------------- |---------------------------|------------------------|
-| MixedDrinkTest     |              |                           | Simon                  |
+| MixedDrinkTest     |              | 100% methods, 100%lines   | Simon                  |
 | SoftDrinkTest      |              |                           | Dominik                 |
 | WineTest           | 03.06.2021   | 100% methods, 91% lines   | Katarina               |
 
@@ -70,9 +71,9 @@ MixedDrink class,  A simple mixed drink consisting of two liquids and an optiona
 | toString() | prints the drink object in a nice way | / | information as a string | 
 
 Testing: 
-85% coverage.
-All methods are tested with parameterrized tests.
-Only 85% coverage because somehow the second constructor is not covered according to IntelliJ, even though it should be.
+100% coverage.
+Most methods are tested with parameterrized tests.
+
 
 
 **Katarina** Wine class, a class with different wines
