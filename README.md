@@ -21,9 +21,9 @@
 |               |               |                              |                        |
 
 ## Sources for writing a README document ## 
-1. [Make a read me web page](https://www.makeareadme.com/)
+#1. [Make a read me web page](https://www.makeareadme.com/)#
 
-2. [Markdown web page](https://www.markdownguide.org/cheat-sheet)
+#2. [Markdown web page](https://www.markdownguide.org/cheat-sheet)#
 
 
 ### Exercise 2 - test coverage ###
