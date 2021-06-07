@@ -25,10 +25,16 @@ Represents a cash register which stores sales and cashiers and can return revenu
 | salesList               | List of sales made with the cashRegister                          | /         |
 | formatter               | formatter for date                                                | /         |
 | constructor CashRegister| currentCashier is the current cashier operating the cash register | currentCashier  |
-| salesList               | List of sales made with the cashRegister                          | /         |
-
-
-
+| changeCashier           | sets given cashier as new current cashier, if she/he is present in the cashier list   | /         |
+| addSale                 | addsSale to list of sales                                         | /         |
+| getRevenueNonAlcoholic  | returns the revenue for non alcoholic drinks - returns revenue    | /         |
+| getRevenueHighAlcoholic  | returns the revenue for high alcoholic drinks (alcohol percentage bigger 40%)    | /         |
+| getRevenueByDay  | returns the revenue on a given date    | /         |
+| getRevenueByCashier  | revenue made by a given cashier as a double    | /         |
+| getRevenueByCashierAndDay  | returns the revenue on a given date    | /         |
+| getCashierList | Getter for cashierList    | /         |
+| getRevenueByCashier  | returns the revenue on a given date    | /         |
+| getCurrentCashier  | returns the revenue on a given date    | /         |
 
 
 
