@@ -39,6 +39,22 @@ Represents a cash register which stores sales and cashiers and can return revenu
 | addCashier  | add an cashier to the cashierList, so he is able to operate the cash register    | cashier       |
 | List Sale   | Getter for salesList    | /         |
 
+###Class Sale 
+Represents a sale of drink
+
+| Code                    | Description                                                       |parameters |
+| ------------------------|-------------------------------------------------------------------|-----------|
+| variable date           | day of sale as string                                             |/          | 
+| variable SimpleDateFormat    | formatter for date   | /         |
+| variable cashier        | cashier who made the sale                         | /         |
+| variable price          | price of the drink purchased                                               | /         |
+| alcoholicPercent        |        alcoholic percent of the drink purchased |/ |
+| constructor Sale        | Creates new liquid with given name, volume and alcoholPercent   |cashier, price alcoholicPercent    |
+| getDate                 | returns date                                       | /         |
+| getCashier              | returns cashier    | /         |
+| getPrice              | returns price    | /         |
+| getAlcoholicPercent             | returns alcoholicPercent   | /         |
+
 
 ### interface PurchasableDrink 
 Interface for drinks that are purchasable
