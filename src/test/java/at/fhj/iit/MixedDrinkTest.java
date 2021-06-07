@@ -1,5 +1,6 @@
 package at.fhj.iit;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -105,6 +106,7 @@ public class MixedDrinkTest {
         assertEquals(expected, actual);
     }
 
+    @DisplayName("Testing getName")
     @Test
     public void testGetName(){
         l1 = new Liquid("TestLiquid1", 0.4, 0);
@@ -113,6 +115,7 @@ public class MixedDrinkTest {
         assertEquals("TestDrink", drink.getName());
     }
 
+    @DisplayName("Testing getPrice")
     @Test
     public void testGetPrice(){
         l1 = new Liquid("TestLiquid1", 0.4, 0, 10);
@@ -121,6 +124,7 @@ public class MixedDrinkTest {
         assertEquals(9, drink.getPrice());
     }
 
+    @DisplayName("Testing purchase")
     @Test
     public void testPurchase(){
         l1 = new Liquid("TestLiquid1", 0.4, 0, 10);
