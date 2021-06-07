@@ -48,18 +48,38 @@ public class Sale {
         this.alcoholicPercent = alcoholicPercent;
     }
 
+    /**
+     * Getter for date
+     *
+     * @return date as string in the form dd.mm.yyyy
+     */
     public String getDate() {
         return date;
     }
 
+    /**
+     * Getter for cashier
+     *
+     * @return the cashier who made the sale
+     */
     public Cashier getCashier() {
         return cashier;
     }
 
+    /**
+     * Getter for price
+     *
+     * @return the price of the drink that was sold
+     */
     public double getPrice() {
         return price;
     }
 
+    /**
+     * Getter for alcoholicPercent
+     *
+     * @return the alcoholic percent of the drink that was sold
+     */
     public double getAlcoholicPercent() {
         return alcoholicPercent;
     }
