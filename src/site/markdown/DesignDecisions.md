@@ -35,7 +35,9 @@ Represents a cash register which stores sales and cashiers and can return revenu
 | getRevenueByCashierAndDay  | returns the revenue on a given date    | cashier, date         |
 | getCashierList | Getter for cashierList    | /         |
 | getRevenueByCashier  | returns the revenue on a given date    | /         |
-| getCurrentCashier  | returns the revenue on a given date    | /         |
+| getCurrentCashier  | Getter for currentCashier   | /         |
+| addCashier  | add an cashier to the cashierList, so he is able to operate the cash register    | cashier       |
+| List Sale   | Getter for salesList    | /         |
 
 
 ### interface PurchasableDrink 

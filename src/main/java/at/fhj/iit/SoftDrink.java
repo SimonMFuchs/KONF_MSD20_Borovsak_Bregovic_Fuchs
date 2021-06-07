@@ -22,12 +22,6 @@ public class SoftDrink extends Drink{
     }
 
     /**
-     * default constuctor
-     */
-    public SoftDrink(){
-    }
-
-    /**
      *
      * @param name1 , first softdrink
      * @param name2 , second softdrink

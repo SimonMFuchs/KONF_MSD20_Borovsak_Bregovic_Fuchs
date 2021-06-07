@@ -17,78 +17,61 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class WineTest {
 
+        private Liquid l1;
+        private Liquid l2;
+        private Wine wine;
+
         @BeforeEach
         void setup (){
-            Liquid wein = new Liquid ("Wine", 0.1, 12);
-            Liquid watter = new Liquid ("Watter", 0.1,0);
-
-            Wine w = new Wine("Wine",wein, watter);
+            l1 = new Liquid ("Wine", 0.1, 12, 10);
+            l2 = new Liquid ("Watter", 0.1,0, 10);
+            wine = new Wine("Wine",l1, l2);
         }
 
-        /**
-         * testing the method getVolume
-         */
-
+        @DisplayName("Testing getVolume")
         @Test
         void testGetVolume() {
-            Liquid wein = new Liquid ("Wine", 0.1, 12);
-            Liquid watter = new Liquid ("Watter", 0.1,0);
-
-            Wine w = new Wine("Wine",wein, watter);
-
-            assertEquals(0.2, w.getVolume());
+            assertEquals(0.2, wine.getVolume());
         }
 
-
-        /**
-         * testing the method getAlcoholPercent
-         */
-
+        @DisplayName("Testing getPercent")
         @Test
-        void getAlcoholPercent() {
-            Liquid wein = new Liquid ("Wine", 0.1, 12);
-            Liquid watter = new Liquid ("Watter", 0.1,0);
-
-            Wine w = new Wine("Wine",wein, watter);
-
-            assertEquals(12, w.getAlcoholPercent());
+        void testGetAlcoholPercent() {
+            assertEquals(12, wine.getAlcoholPercent());
         }
 
-        /**
-         * testing the method getName
-         */
-
+        @DisplayName("Testing getName")
         @Test
-        void getName() {
-            Liquid wein = new Liquid ("Wine", 0.1, 12);
-            Liquid watter = new Liquid ("Watter", 0.1,0);
-
-            Wine w = new Wine("Wine",wein, watter);
-
-            assertEquals("Wine", w.getName());
+        void testGetName() {
+            assertEquals("Wine", wine.getName());
         }
 
-
-
+        @DisplayName("Testing getPrice")
         @Test
-        void isAlcoholic() {
-            Liquid wein = new Liquid ("Wine", 0.1, 12);
-            Liquid watter = new Liquid ("Watter", 0.1,0);
-
-            Wine w = new Wine("Wine",wein, watter);
-
-            assertTrue(w.isAlcoholic());
+        void testGetPrice() {
+            assertEquals("Wine", wine.getName());
         }
 
+        @DisplayName("Testing isAlcoholic")
+        @Test
+        void testIsAlcoholic() {
+            assertTrue(wine.isAlcoholic());
+        }
+
+        @DisplayName("Testing toString")
         @Test
         void testToString() {
-            Liquid wein = new Liquid ("Wine", 0.1, 12);
-            Liquid watter = new Liquid ("Watter", 0.1,0);
-
-            Wine w = new Wine("Wine",wein, watter);
-
             String expected = "Mixed wine drink Wine with 12.0 percent alcohol by volume";
-            assertEquals(expected , w.toString());
+            assertEquals(expected , wine.toString());
         }
 
+        @DisplayName("Testing purchase")
+        @Test
+        void testPurchase() {
+            Cashier cashier = new Cashier("cashier");
+            CashRegister cashRegister = new CashRegister(cashier);
+            Sale expected = new Sale(cashier, 2, 2.4);
+            wine.purchase(cashRegister);
+            assertEquals(expected.getPrice(), cashRegister.getSalesList().get(0).getPrice());
+        }
     }
