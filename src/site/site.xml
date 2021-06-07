@@ -6,6 +6,7 @@
 		<menu name="Overview">
 			<item name="Introduction" href="index.html" />
 			<item name="README" href="README.html" />
+			<item name="Tutorial" href="Tutorial.html" />
 			<item name="DesignDecisions" href="DesignDecisions.html" />
 			<item name="Wine" href="Wine.html" />
 			<item name="SoftDrink" href="SoftDrink.html" />
