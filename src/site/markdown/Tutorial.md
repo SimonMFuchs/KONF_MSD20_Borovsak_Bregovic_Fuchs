@@ -28,8 +28,7 @@ After the first step we are able to build our CashRegister class
 Our last task persists of adding our sale to the CashRegister class. For this we will the method of our interface PurchasableDrink.
    If you are not familiar with the topic interfaces, then please go through this: https://www.w3schools.com/java/java_interface.asp.  
    Because our Drink-class has implemented the interface we are able to use it for all our drink-creations.
-   
-    * exc: ginTonic.purchase(cashRegister);
 
+    * exc: ginTonic.purchase(cashRegister);
 
 At the end we are printing our work like a typical bill, with the name of the cashier, the date and the price of our drink. 
