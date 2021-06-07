@@ -36,6 +36,9 @@ Not much to say here. Just make sure you have maven installed and import the pro
 | 03.06.2021    |  13:01        | Created class Sales.java     | Katarina               |
 | 05.06.2021    |  20:00        | Implemented cash register functionalty| Simon         |
 | 06.06.2021    |  17:00        | Created tests for cash register classes| Simon        |
+| 06.06.2021    |          | | Dominik       |
+| 06.06.2021    |         | | Dominik        |
+More detailed commit history on [repository](https://github.com/SimonMFuchs/KONF_M20_Borovsak_Bregovic_Fuchs/commits/main)
 
 ## Sources for writing a README document ## 
 [Make a read me web page](https://www.makeareadme.com/)
