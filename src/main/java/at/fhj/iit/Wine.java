@@ -1,6 +1,7 @@
 package at.fhj.iit;
 
 import java.util.Date;
+import java.util.Locale;
 
 /**
  * Configuration management
@@ -75,7 +76,7 @@ public class Wine extends Drink {
 
     @Override
     public String toString(){
-        String alcoholPercent = String.format("%.1f", getAlcoholPercent());
+        String alcoholPercent = String.format(Locale.ENGLISH,"%.1f", getAlcoholPercent());
 
             return "Mixed wine drink " + name + " with " + alcoholPercent + " percent alcohol by volume";
     }

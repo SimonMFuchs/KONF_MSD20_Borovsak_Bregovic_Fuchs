@@ -87,7 +87,7 @@ public class WineTest {
 
             Wine w = new Wine("Wine",wein, watter);
 
-            String expected = "Mixed wine drink Wine with 12,0 percent alcohol by volume";
+            String expected = "Mixed wine drink Wine with 12.0 percent alcohol by volume";
             assertEquals(expected , w.toString());
         }
 
